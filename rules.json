@@ -1,0 +1,2584 @@
+{
+    "rules": [
+        {
+            "category": "Home: Rent",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CHECK"
+                    },
+                    {
+                        "field": "Amount",
+                        "operator": "equals",
+                        "value": -2000.0
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Health & Wellness: Premiums",
+            "conditions": {
+                "any_of": [
+                    {
+                        "all_of": [
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "CHECK"
+                            },
+                            {
+                                "field": "Amount",
+                                "operator": "equals",
+                                "value": -300.0
+                            }
+                        ]
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MOTION PICTURE INDUSTRY H"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Home: Utilities",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SO CAL GAS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SPECTRUM"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GLENDALE WATER AND POWER"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Home: Phone Bill",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Phone bill"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Phone"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Car Loan",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "KMF"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Insurance",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GEICO"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Gasoline",
+            "conditions": {
+                "all_of": [
+                    {
+                        "any_of": [
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "ARCO #"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "ROCKET 143"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "USA 63037"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "AMERIPAK"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "7-ELEVEN"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "US PRO GAS"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "SPEEDWAY"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "UNION 76"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "CHEVRON"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "SHELL OIL"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "EL TORO LOCO MARKET"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "GREAT GAS WATER ST"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "CIRCLE K"
+                            }
+                        ]
+                    },
+                    {
+                        "field": "Amount",
+                        "operator": "less_than",
+                        "value": -10.0
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Fees & Registration",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ST OF CA DMV"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SPOTHERO"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CITY OF SANTA MONICA"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LADOT METER PARKING"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PASADENA PARKING"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "WEHO PARKING METERS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LAZ PARKING"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SANTA CRUZ PAY BY PHONE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "JOES AUTO PARKS MTA"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PARKMOBILE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "FASTRAK VIOLATION CENT"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Misc",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CAR PROS KIA OF GLENDALE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "UBER *TRIP"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ARTS AUTO CARE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "T Type 1 Pin Low Voltage Wire Connector"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "APIELE 12mm Momentary Push Button Switch"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LivTee Blind Spot Mirror"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Teeran Android Auto Wireless Adapter"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "K&N Cabin Air Filter"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "K&N Engine Air Filter"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "EastLink Lemon Squeezer Manual"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Spare Tire To Fit 2019-2024 Kia Niro"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "VALLEY KIA"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "BESTONLINETRAFFICSCHOO"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TIRES.COM-ONLINE-ORDER"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LIME*PASS"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Groceries",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "RALPHS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TRADER JOE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GELSON'S"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PAVILIONS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "WHOLEFDS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SPROUTS FARMERS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ALBERTSONS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "WAL-MART SUPERCENTER"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LAZY ACRES"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "VONS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Groceries"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Booze",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GLENROSE LIQUOR"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TST* THE BLIND DONKE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LA FACTORIA-FRONT BAR"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MISSION WINE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PY *TAP AND BOTTLE NORTH"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TST* THE BLACK CAT"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "WALTS BAR"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GglPay BI-RITE LIQUO"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Cozifa Acacia Wood Cutting Board"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TST* EMPLOYEES ONLY LA"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CAP N CORK"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "US LIQUOR MARKET"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "\ud83e\udd43"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Wine"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Child-Related: Afterschool",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "brightwheel"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "BRGHTWHL"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ACT*YMCALA"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "YMCA Daycare"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Child-Related: Nanny",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ZELLE INSTANT PMT TO JOHANA ALVAREZ"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Childcare"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Babysitter"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Child-Related: Support",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Child support"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Child-Related: Misc Expenses",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MOBILE BANKING TRANSFER"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TOTEM* PTA CA MEMBER"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Johnson's Kids Curl-Defining"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "So Cozy Leave In Conditioner"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Steve Spangler Science Color Fizzers"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Annie's Organic Berry Patch Bunny Fruit"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Speak & Spell Electronic Game"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Pllieay Princess Fairy Wands Kit"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CamelBak eddy Kids Bite Valves"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ELLDOO Set of 2 Butterfly Treasure Chest"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SDBING Kids Merino Wool Hiking Socks"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Kingroon PLA Plus"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "YOYI YOYI Silk PLA"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "100% Cotton 210TC Salt Earth Kids Bedsheet"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Waterproof Mattress Protector Twin Size"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GONEJALL Kids Knife Set"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Hulupiggy Preschool Learning Activities"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "The Princess in Black"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ZYsteelball"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CAVWTYU Booster Seat"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Fruit of the Loom Toddler Girls"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Atdcoek Swivel Deburring Tool"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Vvinca 2pc Kids-Goggles"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "P-PIE Rain Stick Instrument Toy"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LA KIDS- SCV CONSIGNMENT"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SkyZoneVanNuys"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "book fair"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "fire wood"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Cayton Museum"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "teacher holiday gift"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Cairo\u2019s bday present"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Kiddie rave"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Headphones for Harper"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Winter Wonderland dance"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Play doh"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "swim goggles"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "River\u2019s bday present"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "swim lessons"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "teacher appreciation"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "HRG Bday #5"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Naya\u2019s 5th bday present"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "binoculars for H"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Cal Sun bucks EBT"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Discovery Cube"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "DMV docs shipping"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "wipes for TK bathroom"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "HRG passport fees"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Mother's Day massage"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Verdugo cancel fee"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MAGIC JUMP RENTALS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ZSK CE GRIFFITH PARK P"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ZSK CE TRAVEL TOWN POS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PIZZA MAN"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PARTY CITY"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "FAMILY ALBUM MITENE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GLENDALE PARKS ONLINE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SCV KIDS CONSIGNM"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "NAT*GEO KIDS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SKYLIGHT BOOKS"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Health & Wellness: Co-pays",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "UCLA FPG PHYS BILLING ECO"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "RULA HEALTH"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AHED HANNA MD"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "UCLA TLHC"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "HarperLax"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Dr. Symms copay"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "UCLA PHYSICIANS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "FOOTCARE CENTER"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "JILL MAZZA MD"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MARINA AQUATIC CENTER"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Health & Wellness: Prescriptions",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CVS/PHARMACY"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Health & Wellness: Other",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "WESTERN NEUROLOGICAL A"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TOLUCA LAKE DENTISTRY"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Fees & Subscriptions: Bank Fees",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MONTHLY MAINTENANCE FEE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "COUNTER CK FEE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "INTERNATIONAL PROCESSING FEE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ATM FEE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SERVICE FEE"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Fees & Subscriptions: Credit Card",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "RENEWAL MEMBERSHIP FEE"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Fees & Subscriptions: Union Dues",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LOCAL 80"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "I.A.T.S.E."
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Fees & Subscriptions: General",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LOVABLE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ANNUAL MEMBERSHIP FEE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TRADINGVIEW"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Fees & Subscriptions: Work Subscriptions",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Amazon Prime*"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "KOINLY"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "HOTSPOTSHIELD"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "\u00bd of Amazon Prime renewal"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Entertainment & Travel: Entertainment",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "V for Vendetta"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Watchmen"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MARVELS X"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AMC 9640 ONLINE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Prime Video"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "NUVERSE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Birthday comedy!"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Weekend fun"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Comedy!"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "REGAL CINEMAS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AMC THEATERS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "VIVID SEATS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TICKETSNETFLIX"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GOOGLE *MARVEL SNAP"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "EB SAMMY OBEID FRESH"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Google Play Books"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Shopping: General",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "THE HOME DEPOT"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "REI"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "vancasso Bonita Blue Salad Plate"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CLSEVXY Magnifying Handheld Mirror"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Dream Valley\u00ae Outlast\u00ae Deepsleep"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Frelaxy Compression Sack"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Wise Owl Outfitters Camping Pillow"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PINECIL - Smart Mini Portable Soldering Iron"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "KING Whetstone Starter Set"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Smiling Shark LED Headlamp"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "BAYKA 34 Ounce 1 Liter French Press"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AeroPress XL Coffee Press"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Fire-Maple \"Fixed Star 3\""
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ASICS Men's GEL-KAYANO 30"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Brooks Men's Beast '20"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "HOPOPRO 5-Mode High Pressure Shower Head"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "THERMOS Stainless King"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Gildan Men's Crew T-Shirts"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Hanes Mens 3-pack Comfort Flex"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Wahl Aqua Blade Rechargeable"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Narako Silicone Watch Bands"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "S&T INC. Microfiber Sweat Towel"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Little Lana Arabesque Silicone Pot Holders"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Strip of 10 Energizer A76"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Patches"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CONTAINER STORE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AUGUTR"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ETSY"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "WALMART"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "EBAY"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "BCY*STEEPANDCHEAP.COM"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "HEYII LLC* PLEDGEBOX"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Shopping: Amazon (Unsorted)",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AMAZON MKTPL"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AMZN Mktp US"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Shopping: Amazon Return",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Forceatt Camping Tent 2 Person"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Expenses: Office",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Nortix White Board Wallpaper"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ZeroWater Official Replacement Filter"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Biswaye Compatible with Dyson V6 Battery"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "mooas Multi-Hexagon Clock Timer"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Sylvania A19 LED Light Bulb"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "USPS PO"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Desk and violin!"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "THE UPS STORE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "FEDEX"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Usteetic Digital Timer"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Expenses: Work",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Repel Plant-Based Lemon Eucalyptus"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Vitamatic Melatonin 3mg Tablets"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Amazon Basic Care ClearLax"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Dealmed Sterile Flexible Fabric"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Dynarex BZK Antiseptic Towelettes"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "General Medi Instant Ice Cold Pack"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Medique Products 76512 Splinter Out"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PhysiciansCare Eye Wash Solution"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Puregen Labs Non-Drowsy Cold & Flu"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Ricola Original Herb Bag"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Timely Extra Strength Headache Relief"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Ohm 24-Hour Allergy Medicine"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Salonpas Pain Relieving Patch"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Pardon the delay!"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CPR certification"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "EMERGENCY MEDICAL"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CPR READY"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "C E SOLUTIONS"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Financial: Taxes",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CKM FINANCIAL SERVICES"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Transfer",
+            "conditions": {
+                "all_of": [
+                    {
+                        "any_of": [
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "DISCOVER"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "WF Credit Card"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "AMEX EPAYMENT"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "TARGET CARD SRVC"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "WELLS FARGO CARD"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "CHASE CREDIT CRD"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "ELECTRONIC DEPOSIT VENMO"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "CUSTOMER WITHDRAWAL"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "ATM WITHDRAWAL"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "AUTOMATIC PAYMENT - THANK"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "CASHBACK BONUS REDEMPTION"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "CREDIT BALANCE REFUND"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "TARGET 1362 BURBANK CA CREDIT"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "Cash Deposit from ATM"
+                            },
+                            {
+                                "all_of": [
+                                    {
+                                        "field": "Description",
+                                        "operator": "contains",
+                                        "value": "VENMO"
+                                    },
+                                    {
+                                        "field": "Account",
+                                        "operator": "equals",
+                                        "value": "US Bank Checking"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "all_of": [
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "ATM WITHDRAWAL"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CUSTOMER WITHDRAWAL"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CASH REWARD"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CASH BACK"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "REDEMPTION"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CASHBACK BONUS"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Income: Paycheck",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MOBILE CHECK DEPOSIT"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ELECTRONIC DEPOSIT BANK OF AMERICA"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Income: Disability",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Money Network"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Income: Reimbursement",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ZELLE INSTANT PMT FROM"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ELECTRONIC DEPOSIT PAYPAL"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ATM DEPOSIT"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "REVERSED ATM FEE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AMR.NET* AMR"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "HWB CAR WASH"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PAYPAL *LYFT TEMP AUTH HO"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Immediate sandwich lol"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MPI Blue Cross"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Reimbursement"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Vehicle cleaning! Thank you!"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Mailing!"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Income: Investment",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "COINBASE INC."
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Income: 1099",
+            "conditions": {
+                "any_of": [
+                    {
+                        "all_of": [
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "REAL TIME PAYMENT FROM MICAH ROSEN-GOLDSTEIN"
+                            },
+                            {
+                                "field": "Amount",
+                                "operator": "equals",
+                                "value": 525.0
+                            }
+                        ]
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "BK - thank you!"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Moving help - thank you!"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "House help"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Painting"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Misc Income: Ed's Dead",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MICAH ROSEN-GOLDSTEIN"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ELECTRONIC DEPOSIT JPMorgan Chase"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "WEB AUTHORIZED PMT ENBRIDGE GAS OHI"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "WASTE MGMT WM EZPAY"
+                    },
+                    {
+                        "all_of": [
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "WM SUPERC Wal-MaBURBANK"
+                            },
+                            {
+                                "field": "Amount",
+                                "operator": "equals",
+                                "value": -1419.99
+                            }
+                        ]
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "505 W. Ravenwood Gas"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "125 for S Pearl St transfer"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Pearl st finalization"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Ravenwood deposit"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Land!"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Pearl st title search"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "Move out incentive for Ravenwood"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SPIRIT AIRL"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Misc Income: Tax Man",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "IRS TREAS 310"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "FRANCHISE TAX BD"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Misc Income: Misc Income",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MPIPHP IAP"
+                    },
+                    {
+                        "all_of": [
+                            {
+                                "field": "Description",
+                                "operator": "equals",
+                                "value": "DEPOSIT"
+                            },
+                            {
+                                "field": "Amount",
+                                "operator": "equals",
+                                "value": 760.0
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "category": "NEEDS REVIEW",
+            "conditions": {
+                "any_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "REAL TIME PAYMENT FROM 6055"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ELECTRONIC DEPOSIT Foris USA DAX CF"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ORCA"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LS EEGC Inc"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "?? ???"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CEP AMERICA"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Transfer",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "WEB"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AUTHORIZED"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PMT"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "VENMO"
+                    },
+                    {
+                        "field": "Account",
+                        "operator": "equals",
+                        "value": "US Bank Checking"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Transfer",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "WEB"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AUTHORIZED"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PMT"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TARGET"
+                    },
+                    {
+                        "field": "Account",
+                        "operator": "equals",
+                        "value": "US Bank Checking"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Misc",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CAR"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PROS"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Misc Income: Tax Man",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "DEPOSIT"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "IRS"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TREAS"
+                    },
+                    {
+                        "field": "Account",
+                        "operator": "equals",
+                        "value": "US Bank Checking"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Transfer",
+            "conditions": {
+                "all_of": [
+                    {
+                        "all_of": [
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "CASH"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "REWARD"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "REFUND"
+                            }
+                        ]
+                    },
+                    {
+                        "all_of": [
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "ATM WITHDRAWAL"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CUSTOMER WITHDRAWAL"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CASH REWARD"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CASH BACK"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "REDEMPTION"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CASHBACK BONUS"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Gasoline",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ARCO"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GLENDALE"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Gasoline",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ARCO%WATSONVILLE"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Fees & Registration",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PARKING"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Misc",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "UBER"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SPITZ"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Transfer",
+            "conditions": {
+                "all_of": [
+                    {
+                        "all_of": [
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "CASH"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "BACK"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "contains",
+                                "value": "REDEMPTION"
+                            }
+                        ]
+                    },
+                    {
+                        "all_of": [
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "ATM WITHDRAWAL"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CUSTOMER WITHDRAWAL"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CASH REWARD"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CASH BACK"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "REDEMPTION"
+                            },
+                            {
+                                "field": "Description",
+                                "operator": "not_contains",
+                                "value": "CASHBACK BONUS"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "COLOMBE"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Child-Related: Misc Expenses",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "LAKIDSCONSI"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Entertainment & Travel: Vacation",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "RECREATION.GOV"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Shopping: General",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "EXPRESS.COM"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Entertainment & Travel: Vacation",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "DELTA"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "AIRLINES"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Entertainment & Travel: Vacation",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ENTERPRISE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "CAR"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "HOTWINGSCAFE"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Home: Utilities",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GWP"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ONLINE"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TU"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MADRE"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "HOMESTATE"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "RAMEN"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "DOMINO'S"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "COFFEE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "BEAN"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TEA"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Shopping: General",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "KICKSTARTER"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Child-Related: Misc Expenses",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SCV"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "KIDS"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "THE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "MOUTH"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Entertainment & Travel: Vacation",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "SEQUOIA"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "BURGER"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Food: Restaurants",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PAPA"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "JOHN'S"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Entertainment & Travel: Entertainment",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "GOOGLE"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "PLAY"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Auto & Transport: Gasoline",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "USA"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "63046"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Shopping: Target (Unsorted)",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TARGET"
+                    },
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "BURBANK"
+                    },
+                    {
+                        "field": "Account",
+                        "operator": "equals",
+                        "value": "Target RedCard"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Shopping: Target (Unsorted)",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "TARGET.COM"
+                    },
+                    {
+                        "field": "Account",
+                        "operator": "equals",
+                        "value": "Target RedCard"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Expenses: Office",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "ZEROWATER"
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Child-Related: Misc Expenses",
+            "conditions": {
+                "all_of": [
+                    {
+                        "field": "Description",
+                        "operator": "contains",
+                        "value": "KIDS"
+                    }
+                ]
+            }
+        }
+    ]
+}
